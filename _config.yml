@@ -1,0 +1,73 @@
+# Jekyll configuration
+markdown: kramdown
+highlighter: rouge
+language: 'en-us'
+
+baseurl: ''
+
+title: Jeevan Chapagain
+description: Phd Student in Computer Science at The University of Memphis
+author: Jeevan Chapagain
+cover: assets/img/blog-cover.jpg
+logo_dark: assets/img/fav.jpeg
+favicon: assets/img/fav.jpeg
+production_url: http://jeevanchapagain.com.np/
+source_url: https://github.com/jeevanc/jeevanc.github.io/
+CNAME: jeevanchapagain.com.np
+
+navigation: False
+subscribers: False
+
+twitter: jchpgain
+github: jeevanc
+instagram: jeevaniam
+linkedin: jeevanchaps
+
+disqus: False
+disqus_shortname: #
+
+google_analytics:  #
+
+permalink: /blog/:slug/
+
+paginate: 5
+paginate_path: /blog/page/:num/
+
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-redirect-from
+  - jekyll-sitemap
+
+feed:
+  path: feed.xml
+
+defaults:
+  - scope:
+      path:            "assets"
+    values:
+      sitemap:         false
+  - scope:
+      path:            "cv"
+    values:
+      sitemap:         false
+  - scope:
+      path:            "blog/page"
+    values:
+      sitemap:         false
+
+exclude:
+  - assets/css
+  - node_modules
+  - vendor
+  - Gemfile
+  - Gemfile.lock
+  - GHOST.txt
+  - gulpfile.js
+  - LICENSE
+  - package.json
+  - Rakefile
+  - README.md
+  - changelog.md
+  - "*.Rmd"
+  - .git*
