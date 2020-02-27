@@ -2,7 +2,6 @@
 markdown: kramdown
 highlighter: rouge
 language: 'en-us'
-
 baseurl: ''
 
 title: Jeevan Chapagain
